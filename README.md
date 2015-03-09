@@ -1,6 +1,6 @@
-# x-gov-tools-prototypes
+# cross-gov-tools-prototypes
 
-HTML prototypes for the cross government tools initiative
+Info and useful links for cross government tools initiative. Currently hosting on heroku at [http://cross-gov-tools.herokuapp.com/](http://cross-gov-tools.herokuapp.com/)
 
 ## Express prototyping tool
 
@@ -38,7 +38,7 @@ npm install
 
 This will install folders containing programs described by the package.json file to a folder called `node_modules`.
 
-#### Run the app
+#### Run the app locally
 
 ```
 node start.js
