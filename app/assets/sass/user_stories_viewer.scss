@@ -1,0 +1,27 @@
+@import 'elements';
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.user-story {
+  min-height: 100vh;
+  background: $alpha-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-story:nth-child(even) {
+  background: $link-colour;
+}
+
+.user-story__content {
+  color: #fff;
+}
+
+.user-story__content--highlight {
+  font-size: 2em;
+  padding-left: $gutter;
+}

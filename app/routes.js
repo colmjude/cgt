@@ -20,5 +20,9 @@ module.exports = {
       });
     });
 
+    app.get('/user-stories', function (req, res) {
+      res.render('user_stories_viewer');
+    });
+
   }
 };
