@@ -1,0 +1,18 @@
+.rendered_markdown {
+  & h1 {
+    @extend .heading-xlarge;
+  }
+  & h2 {
+    @extend .heading-large;
+  }
+  & h3 {
+    @extend .heading-medium;
+  }
+  & h4 {
+    @extend .heading-small;
+  }
+  ul {
+    list-style: disc;
+    margin-left: 1.4em;
+  }
+}
