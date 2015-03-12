@@ -6,11 +6,10 @@
   // need to include here not in html because app engine strips out {{}}
   // when rendering
   var tmpl = ['<li class="user-story">',
-  '{{debug user}}',
     '<div class="user-story__content">',
-      '<p>as a <span class="user-story__content--highlight">{{user}}<span></p>',
-      '<p>i need <span class="user-story__content--highlight">{{need}}</span></p>',
-      '<p>so that <span class="user-story__content--highlight">{{sothat}}</span></p>',
+      '<p><span class="user-story__entity">as a</span><span class="user-story__content--highlight">{{user}}<span></p>',
+      '<p><span class="user-story__entity">i need</span><span class="user-story__content--highlight">{{need}}</span></p>',
+      '<p><span class="user-story__entity">so that</span><span class="user-story__content--highlight">{{sothat}}</span></p>',
     '</div>',
     '<aside class="slide-footer">',
       '<div class="slide-footer__name"><p>cross-government-tools</p></div>',

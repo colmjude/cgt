@@ -24,6 +24,13 @@ body {
 
 .user-story__content {
   color: #fff;
+  max-width: 1020px;
+}
+
+.user-story__entity {
+  width: 4em;
+  display: inline-block;
+  text-align: right;
 }
 
 .user-story__content--highlight {
