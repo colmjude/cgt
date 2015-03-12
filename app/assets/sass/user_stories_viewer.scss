@@ -1,5 +1,7 @@
 @import 'elements';
 
+$slide-signature-size: 4*$gutter;
+
 body {
   padding: 0;
   margin: 0;
@@ -11,6 +13,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  padding-bottom: $slide-signature-size;
+  box-sizing: border-box;
 }
 
 .user-story:nth-child(even) {
@@ -24,4 +29,59 @@ body {
 .user-story__content--highlight {
   font-size: 2em;
   padding-left: $gutter;
+}
+
+.slide-footer {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: $slide-signature-size;
+  width: 100%;
+  border-top: 2px solid $alpha-colour;
+  background: #fff;
+  color: #0B0C0C;
+  @extend %contain-floats;
+  box-shadow: 0 0 0 3px #fff,;
+}
+
+.slide-footer__name, .slide-footer__org {
+  margin: $gutter-two-thirds $gutter*1.5 $gutter-half;
+  font-size: 1.5em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.slide-footer__name {
+  float: left;
+  line-height: $slide-signature-size - $gutter-two-thirds - $gutter-half;
+}
+
+.slide-footer__org {
+  margin-left: $gutter;
+  border-left: 2px solid $cabinet-office;
+  padding-left: $gutter-half;
+  float: right;
+}
+
+.organisation-logo {
+  display: block;
+  background-image: url(/public/images/crests/org_crest_27px_x2.png);
+  background-size: auto 80px;
+  background-repeat: no-repeat;
+  height: 80px;
+  line-height: 40px;
+  padding-left: 96px + $gutter;
+
+  
+  a {
+    color: #0B0C0C;
+    text-decoration: none;
+  }
+}
+
+.unstyled {
+  list-style: disc;
+  padding: 1.5em;
+  border-bottom: 1px solid $panel-colour;
 }
