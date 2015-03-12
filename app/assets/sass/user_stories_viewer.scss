@@ -18,9 +18,20 @@ body {
   box-sizing: border-box;
 }
 
-.user-story:nth-child(even) {
-  background: $link-colour;
+@mixin colour-modifier($colour) {
+  background: $colour;
+
+  .slide-footer {
+    border-top: 2px solid $colour;
+  }
 }
+
+.user-story--pink { @include colour-modifier($alpha-colour); }
+.user-story--blue { @include colour-modifier($light-blue); }
+.user-story--red { @include colour-modifier($mellow-red); }
+.user-story--yellow { @include colour-modifier($yellow); }
+.user-story--green { @include colour-modifier($green); }
+.user-story--orange { @include colour-modifier($orange); }
 
 .user-story__content {
   color: #fff;
@@ -47,7 +58,7 @@ body {
   background: #fff;
   color: #0B0C0C;
   @extend %contain-floats;
-  box-shadow: 0 0 0 3px #fff,;
+  box-shadow: 0 0 0 3px #fff;
 }
 
 .slide-footer__name, .slide-footer__org {

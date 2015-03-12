@@ -2,6 +2,14 @@
   "use strict";
 
   var $user_needs_list = $('.user-stories');
+  var colour_modifiers = [
+    "user-story--pink",
+    "user-story--blue",
+    "user-story--red",
+    "user-story--yellow",
+    "user-story--green",
+    "user-story--orange"
+  ];
 
   // need to include here not in html because app engine strips out {{}}
   // when rendering
@@ -31,7 +39,9 @@
         sothat: item['gsx$sothat']['$t']
       };
 
-      $user_needs_list.append( Mustache.to_html(tmpl, needdata) );
+      $(Mustache.to_html(tmpl, needdata))
+        .addClass( colour_modifiers[Math.floor(Math.random()*colour_modifiers.length)] )
+        .appendTo( $user_needs_list );
     });
   });
 
