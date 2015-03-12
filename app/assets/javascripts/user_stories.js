@@ -1,11 +1,38 @@
 (function($) {
   "use strict";
 
+  var $user_needs_list = $('.user-stories');
+
+  // need to include here not in html because app engine strips out {{}}
+  // when rendering
+  var tmpl = ['<li class="user-story">',
+  '{{debug user}}',
+    '<div class="user-story__content">',
+      '<p>as a <span class="user-story__content--highlight">{{user}}<span></p>',
+      '<p>i need <span class="user-story__content--highlight">{{need}}</span></p>',
+      '<p>so that <span class="user-story__content--highlight">{{sothat}}</span></p>',
+    '</div>',
+    '<aside class="slide-footer">',
+      '<div class="slide-footer__name"><p>cross-government-tools</p></div>',
+      '<div class="slide-footer__org">',
+        '<h2 class="organisation-logo">',
+              '<p><a href="/government/organisations/cabinet-office">Cabinet Office</a></p>',
+              '<p>Government digital service</p>',
+        '</h2>',
+      '</div>',
+    '</aside>',
+  '</li>'].join('\n');
+
   $.getJSON("https://spreadsheets.google.com/feeds/list/1JWfWWk-M3BrOcnGpDw_yk3j4c6RSMxoDv1cGyfJO-zI/od6/public/values?alt=json", function(data) {
 
-    console.log(data.feed.entry);
     $.each(data.feed.entry, function(ind, item) {
-      console.log("as a " + item['gsx$asa']['$t'], " i need to " + item['gsx$ineedto']['$t'], "so that " + item['gsx$sothat']['$t'], "\n");
+      var needdata = {
+        user: item['gsx$asa']['$t'],
+        need: item['gsx$ineedto']['$t'],
+        sothat: item['gsx$sothat']['$t']
+      };
+
+      $user_needs_list.append( Mustache.to_html(tmpl, needdata) );
     });
   });
 
