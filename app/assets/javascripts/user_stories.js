@@ -24,7 +24,7 @@
       '<div class="slide-footer__org">',
         '<h2 class="organisation-logo">',
               '<p><a href="/government/organisations/cabinet-office">Cabinet Office</a></p>',
-              '<p>Government digital service</p>',
+              '<p><a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a></p>',
         '</h2>',
       '</div>',
     '</aside>',
