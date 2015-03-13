@@ -22,7 +22,9 @@
         scrollTime: 600,
         activeClass: 'active',
         onPageChange: null,
-        topOffset : 0
+        topOffset : 0,
+        interval: false,
+        intervalTime: 0
     };
 
     $.scrollIt = function(options) {
@@ -122,6 +124,19 @@
           lastIndex = lastIndex | $('[data-scroll-index]:last').attr('data-scroll-index');
           keyNavigation(e);
           });
+
+        if(settings.interval && settings.intervalTime > 0) {
+          window.setInterval(function() {
+            // yucky yucky yucky
+            lastIndex = $('[data-scroll-index]:last').attr('data-scroll-index');
+            if(active == lastIndex) {
+              navigate(0);
+            } else {
+              var ind = parseInt(active) + 1;
+              navigate(ind);
+            }
+          }, settings.intervalTime)
+        }
 
         $('body').on('click','[data-scroll-nav], [data-scroll-goto]', function(e){
             e.preventDefault();
