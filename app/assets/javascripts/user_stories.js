@@ -15,9 +15,9 @@
   // when rendering
   var tmpl = ['<li class="user-story" data-scroll-index="{{index}}">',
     '<div class="user-story__content">',
-      '<p><span class="user-story__entity">as a</span><span class="user-story__content--highlight">{{user}}<span></p>',
-      '<p><span class="user-story__entity">i need</span><span class="user-story__content--highlight">{{need}}</span></p>',
-      '<p><span class="user-story__entity">so that</span><span class="user-story__content--highlight">{{sothat}}</span></p>',
+      '<p class="user-story__entity"><span class="user-story__entity--std">as a</span><span class="user-story__content--highlight">{{user}}<span></p>',
+      '<p class="user-story__entity"><span class="user-story__entity--std">i need</span><span class="user-story__content--highlight">{{need}}</span></p>',
+      '<p class="user-story__entity"><span class="user-story__entity--std">so that</span><span class="user-story__content--highlight">{{sothat}}</span></p>',
     '</div>',
     '<aside class="slide-footer">',
       '<div class="slide-footer__name"><p>cross-government-tools</p></div>',

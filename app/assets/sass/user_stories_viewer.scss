@@ -39,14 +39,23 @@ body {
 }
 
 .user-story__entity {
-  width: 4em;
+  position: relative;
+  overflow: hidden;
+}
+
+.user-story__entity--std {
+  width: 2.5*$gutter;
   display: inline-block;
   text-align: right;
+  position: absolute;
+  height: 100%;
+  line-height: 3.125em;
 }
 
 .user-story__content--highlight {
   font-size: 2em;
-  padding-left: $gutter;
+  padding-left: 3.5*$gutter;
+  display: block;
 }
 
 .slide-footer {
