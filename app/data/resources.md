@@ -31,6 +31,10 @@
 * [Oreilly - Government As a Platform](http://chimera.labs.oreilly.com/books/1234000000774/ch02.html)
 * [Computer weekly, GDS hints at future approach to governemnt as a platform](http://www.computerweekly.com/news/2240238405/GDS-hints-at-future-approach-to-government-as-a-platform)
 
+##Performance management
+* [Criticism and ineffective feedback](https://kateheddleston.com/blog/criticism-and-ineffective-feedback)
+* [Reinventing Performance Management, Harvard Business Review] (https://hbr.org/2015/04/reinventing-performance-management)
+
 ##Other info
 * [Talk by Tony Ageh, BBC controller of archives, about the digital public space](https://www.royalholloway.ac.uk/harc/documents/pdf/tonyageh.pdf). Some interesting ideas here that are relevant for government
 * [Service Design Manual prompts](http://serviceassessments.dsd.io/index.html)
