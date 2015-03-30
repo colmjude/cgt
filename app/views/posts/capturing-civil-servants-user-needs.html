@@ -1,0 +1,69 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$head}}
+  {{>includes/head}}
+  <link href="/public/stylesheets/blog.css" media="screen" rel="stylesheet" type="text/css" />
+{{/head}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+  <header class="area-header">
+    <div class="text">
+      <h1 class="area-header__sub-heading"><a href="/posts">Blog</a></h1>
+      <h1 class="area-header__title"><a href="https://gds.blog.gov.uk">Cross government tools</a></h1>
+    </div>
+  </header>
+
+  <article class="blog--content">
+    <header>
+      <h2 class="heading-large">Capturing civil servant's user needs</h2>
+      <p class="blog--byline author vcard"><a href="" title="Posts by David Mann" class="url fn" rel="author">David Mann</a>, <time class="updated" datetime="2015-03-24T09:00:46+00:00" pubdate="">24 March 2015</time></p>
+    </header>
+
+    <p>From our experience of working on the GOV.UK transition project, one of the most useful tools we had was <a href="https://insidegovuk.blog.gov.uk/2013/10/25/a-tool-to-capture-user-needs-and-measure-performance/">Maslow</a>. Maslow is a piece of software that helps us record and manage the user needs behind all the content that is published on GOV.UK.</p>
+
+    <p>As we are running a project to define and test the user needs of civil servants, we felt Maslow would be an invaluable tool for us. We can record not just descriptions of user needs but also supporting evidence to show why they are important and criteria for us to measure when a need is met.</p>
+
+    <p>On the GOV.UK transition project, Maslow made it easier for us to explain user needs to our colleagues across government, and provided a space where we could collaborate about the ways in which we could best meet those needs.</p>
+
+    <figure>
+      <img src="" alt="" />
+      <figcaption>insert image here</figcaption>
+    </figure>
+
+    <p>Since we first talked about Maslow a few years ago, other people have asked us how they could use it for their own projects. Dan Blundell recently wrote about <a href="http://danblundell.com/2015/02/maslow-how-to-spin-up-the-gov-dot-uk-needs-api/">getting Maslow up and running outside the GOV.UK stack</a>.</p>
+
+    <p>We’ve been working on a fork of Maslow which is de-coupled from other GOV.UK components (like our single sign-on service), so that other teams and projects can use it. We’ve simplified how we store the needs data, using a PostgreSQL database instead of the <a href="https://github.com/alphagov/govuk_need_api">Need API</a>. We’ve also removed other dependencies on our Content API and the transition workflow processes.</p>
+
+    <p>In addition, we’ve started work on features to make the data we capture more flexible - for example, whilst capturing information about historic pageviews makes sense for a GOV.UK need, it’s not a useful measure for a civil service need.</p>
+
+    <p>We need to be able to map needs we record to existing services, for example <a href="https://civilservicelearning.civilservice.gov.uk/">Civil Service Learning</a>. Also, we need to be able to categorise needs according to our research framework [link to post about the journey] and sprint themes [link here to Elisse’s picture].</p>
+
+    <figure>
+      <img src="" alt="" />
+      <figcaption>insert image here</figcaption>
+    </figure>
+
+    <p>We’ve changed the existing decision-making process for a need, so that we can now measure three kinds of decisions: whether a need is in scope, whether it has complete information, and whether it’s being met or not. Every decision is saved, so you can look back at a documented history of the need.</p>
+
+    <figure>
+      <img src="" alt="" />
+      <figcaption>insert image here</figcaption>
+    </figure>
+
+    <p>If you’re interested in using Maslow for your organisation, the code for our work-in-progress fork is on <a href="https://github.com/JordanHatch/maslow-standalone">GitHub</a>.</p>
+
+    <p>We’re going to continue iterating Maslow as we continue our discovery phase and we’ll report back on our changes in the future.</p>
+
+  </article>
+</main>
+
+{{/content}}
+
+{{/layout}}
