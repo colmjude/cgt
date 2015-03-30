@@ -1,0 +1,17 @@
+@mixin linx($link, $hover, $visit, $active, $decoration: none) {
+  a {
+      color: $link;
+      text-decoration: $decoration;
+      &:visited {
+        color: $visit;
+      }
+      &:hover {
+        color: $hover;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      &:active {
+        color: $active;
+      }
+    }
+}

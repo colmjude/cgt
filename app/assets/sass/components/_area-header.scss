@@ -6,25 +6,13 @@
 .area-header__sub-heading {
   font-size: 36px;
   line-height: 40px;
-  a {
-    color: $grey-1;
-    text-decoration: none;
-  }
+
+  @include linx($secondary-text-colour, null, null, null);
 }
 
 .area-header__title {
   @extend .heading-xlarge;
   margin-top: 0;
 
-  a {
-    color: $text-colour;
-    text-decoration: none;
-  }
-}
-
-.area-header__sub-heading, .area-header__title {
-  a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+  @include linx($text-colour, null, null, null);
 }
