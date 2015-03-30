@@ -4,7 +4,7 @@
   border-bottom: 1px solid $border-colour;
 }
 
-.area-header--sub-heading {
+.area-header__sub-heading {
   font-size: 36px;
   line-height: 40px;
   a {
@@ -13,7 +13,7 @@
   }
 }
 
-.area-header--title {
+.area-header__title {
   @extend .heading-xlarge;
   margin-top: 0;
 
@@ -23,7 +23,7 @@
   }
 }
 
-.area-header--sub-heading, .area-header--title {
+.area-header__sub-heading, .area-header__title {
   a:hover {
     text-decoration: underline;
     cursor: pointer;
