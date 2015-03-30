@@ -4,18 +4,34 @@
 	GOV.UK prototyping kit
 {{/pageTitle}}
 
+{{$head}}
+  {{>includes/head}}
+  <link href="/public/stylesheets/blog.css" media="screen" rel="stylesheet" type="text/css" />
+{{/head}}
+
 {{$content}}
 
 <main id="content" role="main">
 
-  <h1 class="heading-xlarge">Posts from cross government tools</h1>
-  <ul class="list-bullet">
-    <li>
-      <a href="/posts/understanding-user-needs-in-the-21st-century">
-        Understanding user needs in the 21st century Civil Service
-      </a>
-    </li>
-  </ul>
+  <header class="blog--header">
+    <div class="text">
+      <h1 class="blog"><a href="https://gds.blog.gov.uk">Blog</a></h1>
+      <h1 class="blog-title"><a href="https://gds.blog.gov.uk">Cross government tools</a></h1>
+    </div>
+  </header>
+
+  <article class="blog--content">
+
+    <h1 class="heading-large">Recent posts</h1>
+    <ul class="list-bullet">
+      <li>
+        <a href="/posts/understanding-user-needs-in-the-21st-century">
+          Understanding user needs in the 21st century Civil Service
+        </a>
+      </li>
+    </ul>
+
+  </article>
 
 </main>
 
