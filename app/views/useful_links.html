@@ -4,12 +4,20 @@
 
 {{$content}}
 
-<main id="content" role="main" class="rendered_markdown">
+<main id="content" role="main">
   <a href="/">&lt; back</a>
 
-  <h1 class="heading-xlarge">Useful resources</h1>
-  
-  {{{markdown}}}
+  <header class="area-header">
+    <div class="text">
+      <h1 class="area-header--sub-heading"><a href="">Background</a></h1>
+      <h1 class="area-header--title"><a href="">Useful resources</a></h1>
+    </div>
+  </header>
+
+  <article class="rendered_markdown text">
+    {{{markdown}}}
+  </article>
+
 </main>
 
 {{/content}}
