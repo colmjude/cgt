@@ -1,35 +1,5 @@
 @import 'elements';
-
-.blog--header {
-  margin-top: 1.5*$gutter;
-  margin-bottom: $gutter;
-}
-
-.blog {
-  font-size: 36px;
-  line-height: 40px;
-  a {
-    color: $grey-1;
-    text-decoration: none;
-  }
-}
-
-.blog-title {
-  @extend .heading-xlarge;
-  margin-top: 0;
-
-  a {
-    color: $text-colour;
-    text-decoration: none;
-  }
-}
-
-.blog, .blog-title {
-  a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-}
+@import 'components/area-header';
 
 .blog--content {
   @extend .text;
