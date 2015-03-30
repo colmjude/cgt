@@ -16,3 +16,7 @@
 
   @include linx($text-colour, null, null, null);
 }
+
+.area-header + article {
+  border-top: 1px solid $border-colour;
+}
