@@ -14,6 +14,19 @@
     </div>
   </header>
 
+  <nav class="useful-links-nav list-number">
+    <ol>
+      <li data-links-ref="0"><a href="">Comment threads</a></li>
+      <li data-links-ref="1"><a href="">People to talk to</a></li>
+      <li data-links-ref="2"><a href="">Departments doing recruitment</a></li>
+      <li data-links-ref="3"><a href="">Tools for the workplace</a></li>
+      <li data-links-ref="4"><a href="">Twitter</a></li>
+      <li data-links-ref="5"><a href="">GaaP</a></li>
+      <li data-links-ref="6"><a href="">Performance management</a></li>
+      <li data-links-ref="7"><a href="">Other info</a></li>
+    </ol>
+  </nav>
+
   <article class="rendered_markdown text">
     {{{markdown}}}
   </article>
@@ -21,6 +34,11 @@
 </main>
 
 {{/content}}
+
+{{$bodyEnd}}
+  {{>includes/scripts}}
+  <script src="/public/javascripts/useful-links.js"></script>
+{{/bodyEnd}}
 
 {{/layout}}
 

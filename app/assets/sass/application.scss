@@ -42,7 +42,12 @@
   font-size: 16px;
 }
 
-
 @import 'utils/linx';
 @import 'markdown_hack';
 @import 'components/area-header';
+
+.useful-links-nav {
+  border-top: 1px solid $border-colour;
+  border-bottom: 1px solid $border-colour;
+  padding: $gutter 0 $gutter $gutter;
+}
