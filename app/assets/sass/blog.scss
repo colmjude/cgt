@@ -4,8 +4,8 @@
   @extend .text;
   border-top: 1px solid $border-colour;
 
-  p {
-    margin-bottom: 1.4em;
+  p, .blog__figure {
+    margin-bottom: $gutter;
   }
 }
 
@@ -24,5 +24,17 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.blog__figure {
+  max-width: 100%;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+  figcaption {
+    color: $secondary-text-colour;
+    font-size: 16px;
   }
 }
