@@ -30,6 +30,7 @@
 * [Diginomica - If the UK gets Government-as-a-platform right, ‘government’ will never be the same again](http://diginomica.com/2015/02/04/uk-gets-government-platform-right-government-will-never/)
 * [Oreilly - Government As a Platform](http://chimera.labs.oreilly.com/books/1234000000774/ch02.html)
 * [Computer weekly, GDS hints at future approach to governemnt as a platform](http://www.computerweekly.com/news/2240238405/GDS-hints-at-future-approach-to-government-as-a-platform)
+* [7 steps to GaaP heaven](http://central-government.governmentcomputing.com/features/seven-steps-to-gaap-heaven-4540990) - a quote relevant to our outcomes, "there is a need for a clearer expression of the real value, making some conversations potentially 'a little less digital and a bit more business-like.'"
 
 ##Performance management
 * [Criticism and ineffective feedback](https://kateheddleston.com/blog/criticism-and-ineffective-feedback)
@@ -45,3 +46,4 @@
 * [What the BBC are doing next online: Tony Hall speech](http://www.bbc.co.uk/mediacentre/speeches/2015/tony-hall-bbc-internet-era) (interesting to see what their strategy is looking like online - sign-in, personalisation, recommendations, lots of mentions of tools online, data)
 * [Also Jemima Kiss’ take on this](http://www.theguardian.com/technology/2015/mar/05/digital-public-space-britain-missing-national-institution)
 * [Mapping operations](http://blog.gardeviance.org/2015/03/some-basics-of-operation.html)
+* [Rebuilding the internet around you by Graham Hill/](https://www.ctrl-shift.co.uk/news/2014/07/03/guest-post-rebuilding-the-internet-around-you-by-graham-hill/)
