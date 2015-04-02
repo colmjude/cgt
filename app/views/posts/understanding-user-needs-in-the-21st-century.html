@@ -1,24 +1,10 @@
-{{<layout}}
+{{<post}}
 
 {{$pageTitle}}
-	GOV.UK prototyping kit
+	Understanding user needs in the 21st century Civil Service | Cross Government Tools
 {{/pageTitle}}
 
-{{$head}}
-  {{>includes/head}}
-  <link href="/public/stylesheets/blog.css" media="screen" rel="stylesheet" type="text/css" />
-{{/head}}
-
-{{$content}}
-
-<main id="content" role="main">
-
-  <header class="area-header">
-    <div class="text">
-      <h1 class="area-header__sub-heading"><a href="/posts">Blog</a></h1>
-      <h1 class="area-header__title"><a href="/">Cross government tools</a></h1>
-    </div>
-  </header>
+{{$post_content}}
 
   <article class="blog--content">
     <header>
@@ -99,10 +85,6 @@
     <p>Working from the user needs we uncover through our different themes, we will start to sketch out some ideas in code. The prototypes themselves will be a valuable source of data that will inform further areas for research. You will be able to view our prototypes in our experimentation space (password required, you can request one from the team).</p>
   </article>
 
-  {{>includes/disqus}}
+{{/post_content}}
 
-</main>
-
-{{/content}}
-
-{{/layout}}
+{{/post}}

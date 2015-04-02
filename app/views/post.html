@@ -1,0 +1,35 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+  <link href="/public/stylesheets/blog.css" media="screen" rel="stylesheet" type="text/css" />
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <header class="area-header">
+    <div class="text">
+      <h1 class="area-header__sub-heading"><a href="/posts">Blog</a></h1>
+      <h1 class="area-header__title"><a href="/">Cross government tools</a></h1>
+    </div>
+  </header>
+
+  {{$post_content}}{{/post_content}}
+
+  {{>includes/disqus}}
+
+</main>
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
