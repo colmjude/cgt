@@ -99,6 +99,24 @@ module.exports = function(grunt){
                 logConcurrentOutput: true
             }
         }
+    },
+
+    // grunt-git to combine pushing to git and heroku
+    gitpush: {
+      repo_master: {
+        options: {
+          remote: "origin",
+          branch: "master",
+          verbose: true
+        }
+      },
+      heroku_master: {
+        options: {
+          remote: "heroku",
+          branch: "master",
+          verbose: true
+        }
+      }
     }
   });
 
@@ -109,7 +127,8 @@ module.exports = function(grunt){
     'grunt-sass',
     'grunt-nodemon',
     'grunt-text-replace',
-    'grunt-concurrent'
+    'grunt-concurrent',
+    'grunt-git'
   ].forEach(function (task) {
     grunt.loadNpmTasks(task);
   });
@@ -133,6 +152,9 @@ module.exports = function(grunt){
     'sass',
     'concurrent:target'
   ]);
+
+  // run both push commands
+  grunt.registerTask('deploy', ['gitpush:repo_master', 'gitpush:heroku_master']);
 
   grunt.event.on('watch', function(action, filepath, target) {
 
