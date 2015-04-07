@@ -24,5 +24,9 @@ module.exports = {
       res.render('user_stories_viewer');
     });
 
+    app.get('/screen', function (req, res) {
+      res.render('screen');
+    });
+
   }
 };
