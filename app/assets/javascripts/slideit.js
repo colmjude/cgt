@@ -97,7 +97,9 @@
       var prev = $(settings.current_selector).prev(settings.slide_selector);
 
       // looping to the bottom if there's no more sections above
-      if(!prev.length) {}
+      if(!prev.length) {
+        doScroll($slides[$slides.length - 1]);
+      }
 
       if(prev.length) {
         doScroll(prev);
@@ -108,7 +110,9 @@
       var next = $(settings.current_selector).next(settings.slide_selector);
 
       // looping to the top if there's no more sections below
-      if(!next.length) {}
+      if(!next.length) {
+        doScroll($slides[0]);
+      }
 
       if(next.length) {
         doScroll(next);
