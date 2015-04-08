@@ -41,15 +41,20 @@
     var setInitialSlide = function() {
       // does one exist?
       var $currentSlide = $(settings.current_selector);
-      if($currentSlide != undefined || $currentSlide > 1) {
-        // no? just go for the first slide
-        updateActiveSlide($slides[0]);
+      // is there one set in the URL
+      if(window.location.hash !== "") {
+        $currentSlide = $(window.location.hash);
       }
+      if($currentSlide == undefined || $currentSlide > 1) {
+        // no? just go for the first slide
+        $currentSlide = $slides[0];
+      }
+      updateActiveSlide($currentSlide);
+
       // check if auto scroll is enabled
       if(settings.auto_scroll) {
         setUpNextScroll();
       }
-      // is there one set in the URL
     };
 
     var setUpNextScroll = function() {
@@ -67,6 +72,11 @@
         .addClass(settings.current_class)
         .siblings()
           .removeClass(settings.current_class);
+      updateHash($(el).attr("id"));
+    };
+
+    var updateHash = function(id) {
+      window.location.hash = id;
     };
 
     //sets up keyboard navigation behavior
