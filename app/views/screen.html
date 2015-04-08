@@ -22,7 +22,7 @@
       </aside>
     </li>
 
-    <li class="slide slide--white">
+    <li class="slide slide--white" data-display-time=12000>
       <div class="slide__content">
         <img src="/public/images/person_entity_map_wide.svg" alt="Make up of a person entity">
       </div>
@@ -54,7 +54,7 @@
       </aside>
     </li>
 
-    <li class="slide slide--red">
+    <li class="slide slide--red" data-display-time=7000>
       <div class="slide__content slide__content--wide">
         <blockquote class="slide__quote">
           <p>And the intranet - it’s scary. It feels like you are using a website from 1995. A thing like booking a trip takes like 15 minutes.<span class="slide__quote-endmark">&rdquo;</span></p>
@@ -71,7 +71,7 @@
       </aside>
     </li>
 
-    <li class="slide slide--green">
+    <li class="slide slide--green" data-display-time=8000>
       <div class="slide__content slide__content--wide">
         <blockquote class="slide__quote">
           <p>...there’s a big paradox between what it’s trying to deliver to the public and at the same time not changing anything internally.<span class="slide__quote-endmark">&rdquo;</span></p>
@@ -98,7 +98,7 @@
   <script src="/public/javascripts/slideIt.js"></script>
   <script>
   $(function() {
-    $.slideIt();
+    $.slideIt({auto_scroll: true});
   });
   </script>
 {{/bodyEnd}}

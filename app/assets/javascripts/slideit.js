@@ -10,9 +10,12 @@
     current_class: "slide--current",
     slide_class: "slide",
     transition_time: 600,
-    default_display_time: 0, // for when it isn't a data attr
-    offset: 0
+    default_display_time: 5000, // for when it isn't a data attr
+    offset: 0,
+    auto_scroll: false
   };
+
+  var next_scroll_timeout;
 
   $.slideIt = function(options) {
     var settings = $.extend(defaults, options);
@@ -32,6 +35,7 @@
       $(window).on('keydown', function(e) {
         keyNavigation(e);
       });
+
     };
 
     var setInitialSlide = function() {
@@ -41,7 +45,21 @@
         // no? just go for the first slide
         updateActiveSlide($slides[0]);
       }
+      // check if auto scroll is enabled
+      if(settings.auto_scroll) {
+        setUpNextScroll();
+      }
       // is there one set in the URL
+    };
+
+    var setUpNextScroll = function() {
+      var $currentSlide = $(settings.current_selector);
+
+      var display_time = ( $currentSlide.data("display-time") != undefined ) ? $currentSlide.data("display-time"): settings.default_display_time;
+
+      // only have one scroll timeout active
+      window.clearTimeout(next_scroll_timeout);
+      next_scroll_timeout = window.setTimeout(moveDown, display_time);
     };
 
     var updateActiveSlide = function(el) {
@@ -90,6 +108,9 @@
             console.log("scroll complete");
             //afterSectionLoads(v);
             updateActiveSlide(el);
+            if(settings.auto_scroll) {
+              setUpNextScroll();
+            }
           });
     };
 
@@ -108,9 +129,11 @@
 
     var moveDown = function() {
       var next = $(settings.current_selector).next(settings.slide_selector);
+      console.log(next);
 
       // looping to the top if there's no more sections below
       if(!next.length) {
+        // maybe move slides not visible below this one instead...
         doScroll($slides[0]);
       }
 
