@@ -12,7 +12,8 @@
     transition_time: 600,
     default_display_time: 5000, // for when it isn't a data attr
     offset: 0,
-    auto_scroll: false
+    auto_scroll: false,
+    infinite_loop: true
   };
 
   var next_scroll_timeout;
@@ -99,12 +100,12 @@
       return true;
     };
 
-    var doScroll = function(el) {
-      performMovement(el);
+    var doScroll = function(el, cb) {
+      performMovement(el, cb);
       //element.addClass(ACTIVE).siblings().removeClass(ACTIVE);
     };
 
-    var performMovement = function(el){
+    var performMovement = function(el, cb){
       // animate with css3 ??
 
       // animate with jquery
@@ -120,6 +121,9 @@
             updateActiveSlide(el);
             if(settings.auto_scroll) {
               setUpNextScroll();
+            }
+            if(cb) {
+              cb();
             }
           });
     };
@@ -139,7 +143,6 @@
 
     var moveDown = function() {
       var next = $(settings.current_selector).next(settings.slide_selector);
-      console.log(next);
 
       // looping to the top if there's no more sections below
       if(!next.length) {
@@ -147,8 +150,17 @@
         doScroll($slides[0]);
       }
 
+      var cb = function() {
+        // make sure working with latest slide collection
+        $slides = $(settings.slide_selector);
+        if($slides.length - $slides.index(next) < 3) {
+          var $me = $(settings.slide_selector).first();
+          $me.parent().append($me);
+        }
+      };
+
       if(next.length) {
-        doScroll(next);
+        doScroll(next, cb);
       }
     };
 
