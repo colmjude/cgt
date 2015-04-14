@@ -116,7 +116,6 @@
       }, settings.transition_time)
         .promise().done(
           function () { //only one single callback in case of animating  `html, body`
-            console.log("scroll complete");
             //afterSectionLoads(v);
             updateActiveSlide(el);
             if(settings.auto_scroll) {
