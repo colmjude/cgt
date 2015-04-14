@@ -42,3 +42,28 @@ body {
 .slide__quote-endmark {
   content: '\201D';
 }
+
+$base-font: 19px;
+
+.user-story__entity {
+  position: relative;
+  overflow: hidden;
+  margin: $gutter-half 0 $gutter*1.5;
+}
+
+.user-story__entity--std {
+  width: 2.5*$gutter;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  height: 100%;
+  font-size: $base-font;
+  line-height: 2*$gutter + (2*$gutter - $base-font)/2;
+}
+
+.user-story__content--highlight {
+  font-size: 3*$base-font;
+  line-height: 2*$gutter;
+  padding-left: 3.5*$gutter;
+  display: block;
+}
