@@ -23,7 +23,7 @@
       </aside>
     </li>-->
 
-    <li class="slide slide--red" data-display-time=8000 id="un3">
+    <li class="slide slide--red" data-display-time=15000 id="un3">
       <div class="slide__content">
         <p class="user-story__entity">
           <span class="user-story__entity--std">as a</span>
@@ -49,7 +49,7 @@
       </aside>
     </li>
 
-    <li class="slide slide--white" data-display-time=12000 id="personmap">
+    <li class="slide slide--white" data-display-time=15000 id="personmap">
       <div class="slide__content">
         <img src="/public/images/person_entity_map_wide.svg" alt="Make up of a person entity">
       </div>
@@ -64,7 +64,7 @@
       </aside>
     </li>
 
-    <li class="slide slide--blue" id="quote1">
+    <li class="slide slide--blue" id="quote1" data-display-time=10000>
       <div class="slide__content">
         <blockquote class="slide__quote">
           <p>I forward useful contacts via personal email...<span class="slide__quote-endmark">&rdquo;</span></p>
@@ -81,7 +81,7 @@
       </aside>
     </li>
 
-    <li class="slide slide--blue" data-display-time=10000 id="un23">
+    <li class="slide slide--blue" data-display-time=15000 id="un23">
       <div class="slide__content">
         <p class="user-story__entity">
           <span class="user-story__entity--std">as a</span>
@@ -107,7 +107,7 @@
       </aside>
     </li>
 
-    <li class="slide slide--red" data-display-time=7000 id="quote2">
+    <li class="slide slide--red" data-display-time=11000 id="quote2">
       <div class="slide__content slide__content--wide">
         <blockquote class="slide__quote">
           <p>And the intranet - it’s scary. It feels like you are using a website from 1995. A thing like booking a trip takes like 15 minutes.<span class="slide__quote-endmark">&rdquo;</span></p>
@@ -124,7 +124,7 @@
       </aside>
     </li>
 
-    <li class="slide slide--green" data-display-time=8000 id="quote3">
+    <li class="slide slide--green" data-display-time=12000 id="quote3">
       <div class="slide__content slide__content--wide">
         <blockquote class="slide__quote">
           <p>...there’s a big paradox between what it’s trying to deliver to the public and at the same time not changing anything internally.<span class="slide__quote-endmark">&rdquo;</span></p>
@@ -151,7 +151,10 @@
   <script src="/public/javascripts/slideIt.js"></script>
   <script>
   $(function() {
-    $.slideIt({auto_scroll: true});
+    $.slideIt({
+      auto_scroll: true,
+      transition_time: 800
+    });
   });
   </script>
 {{/bodyEnd}}
