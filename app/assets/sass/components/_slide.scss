@@ -44,7 +44,16 @@ $slide-signature-size: 4*$gutter;
 .slide__content {
   color: #fff;
   max-width: 1020px;
+  @include media($min-width: 1441px) {
+    max-width: 85%;
+  }
 }
+
+//.slide__content--img {
+//  @include media($min-width: 1441px) {
+//    max-width: 85%;
+//  }
+//}
 
 .slide-footer {
   position: absolute;
