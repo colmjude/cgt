@@ -49,11 +49,12 @@ $slide-signature-size: 4*$gutter;
   }
 }
 
-//.slide__content--img {
+.slide__content--img {
+  max-width: 1020px;
 //  @include media($min-width: 1441px) {
 //    max-width: 85%;
 //  }
-//}
+}
 
 .slide-footer {
   position: absolute;
