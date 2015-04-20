@@ -25,6 +25,7 @@ $slide-signature-size: 4*$gutter;
 .slide--yellow { @include colour-modifier($yellow); }
 .slide--green { @include colour-modifier($green); }
 .slide--orange { @include colour-modifier($orange); }
+.slide--black { @include colour-modifier($black); }
 .slide--white {
   @include colour-modifier(#fff);
 
