@@ -20,6 +20,7 @@
 * [Open internet tools for civil servants](https://www.gov.uk/government/publications/digital-skills-in-the-civil-service/an-introductory-guide-to-open-internet-tools-for-civil-servants)
 * [Civil Service Learning using Agile / Trello](https://civilservice.blog.gov.uk/2015/02/09/how-civil-service-learning-is-turning-agile/)
 * [How Civil Service Learning is turning Agile](https://civilservice.blog.gov.uk/2015/02/09/how-civil-service-learning-is-turning-agile/)
+* [What my Grandfather’s drill can teach us about designing business software] (https://medium.com/elegant-tools/my-grandfather-s-drill-and-what-it-can-teach-us-about-designing-business-software-8a76f533e55c)
 
 ##Twitter
 * [SAP](https://twitter.com/NatalieRobson/status/562569227186761730)
