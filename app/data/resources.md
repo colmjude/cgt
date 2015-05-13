@@ -52,3 +52,4 @@
 * [Also Jemima Kiss’ take on this](http://www.theguardian.com/technology/2015/mar/05/digital-public-space-britain-missing-national-institution)
 * [Mapping operations](http://blog.gardeviance.org/2015/03/some-basics-of-operation.html)
 * [General Jobs](http://theundercoverrecruiter.com/job-seeker-not-post-social-media/)
+* [Onboarding tips](http://www.inc.com/young-entrepreneur-council/8-ideas-for-making-your-onboarding-process-more-efficient.html?cid=sf01001)
