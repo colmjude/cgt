@@ -53,3 +53,4 @@
 * [Mapping operations](http://blog.gardeviance.org/2015/03/some-basics-of-operation.html)
 * [General Jobs](http://theundercoverrecruiter.com/job-seeker-not-post-social-media/)
 * [Onboarding tips](http://www.inc.com/young-entrepreneur-council/8-ideas-for-making-your-onboarding-process-more-efficient.html?cid=sf01001)
+* [Jeff Patton's Story Mapping](https://marcabraham.wordpress.com/2012/07/27/jeff-pattons-story-mapping/)
