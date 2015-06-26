@@ -22,9 +22,15 @@
         {{#apps}}
         <tr>
           <td>{{ name }}</td>
-          <td><a href="{{ urls.dev }}" >{{ urls.dev }}</a></td>
-          <td><a href="{{ urls.staging }}" >{{ urls.staging }}</a></td>
-          <td><a href="{{ urls.prod }}" >{{ urls.prod }}</a></td>
+          <td><a href="{{ urls.dev }}">{{ urls.dev }}</a></td>
+          <td>
+            <a href="{{ urls.staging }}">{{ urls.staging }}</a>
+            <a href="{{ urls.staging_bare }}">(bare)</a>
+          </td>
+          <td>
+            <a href="{{ urls.prod }}">{{ urls.prod }}</a>
+            <a href="{{ urls.prod_bare }}">(bare)</a>
+          </td>
         </tr>
         {{/apps}}
       </tbody>
