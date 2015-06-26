@@ -1,0 +1,35 @@
+{{<layout}} {{$pageTitle}} GOV.UK prototyping kit {{/pageTitle}} {{$content}} <main id="content" role="main">
+  <div class="grid-row">
+
+    <table>
+      <thead>
+        <tr>
+          <td>
+            Name
+          </td>
+          <td>
+            Dev
+          </td>
+          <td>
+            Staging
+          </td>
+          <td>
+            Prod
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        {{#apps}}
+        <tr>
+          <td>{{ name }}</td>
+          <td><a href="{{ urls.dev }}" >{{ urls.dev }}</a></td>
+          <td><a href="{{ urls.staging }}" >{{ urls.staging }}</a></td>
+          <td><a href="{{ urls.prod }}" >{{ urls.prod }}</a></td>
+        </tr>
+        {{/apps}}
+      </tbody>
+    </table>
+  </div>
+  </main>
+
+  {{/content}} {{/layout}}
