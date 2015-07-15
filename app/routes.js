@@ -1,6 +1,10 @@
 var markdown = require("markdown").markdown;
 var fs = require("fs");
 var path = require('path');
+var express = require('express');
+
+var auth = express.basicAuth(process.env.BASIC_AUTH_USERNAME, process.env.BASIC_AUTH_PASSWORD);
+
 
 module.exports = {
   bind: function(app) {
@@ -42,7 +46,7 @@ module.exports = {
       res.render('screen');
     });
 
-    app.get('/apps', function(req, res) {
+    app.get('/apps', auth, function(req, res) {
       var data;
       fs.readFile(path.join(__dirname, 'data/apps.json'), {
         encoding: 'utf-8'
