@@ -1,6 +1,6 @@
 # cross-gov-tools-prototypes
 
-Info and useful links for cross government tools initiative. Currently hosting on heroku at [http://cross-gov-tools.herokuapp.com/](http://cross-gov-tools.herokuapp.com/)
+Info and useful links for cross government tools initiative. Currently hosting on heroku at [http://x-gov-services-home.herokuapp.com/](http://x-gov-services-home.herokuapp.com/)
 
 ## Express prototyping tool
 
