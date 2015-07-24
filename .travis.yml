@@ -1,0 +1,7 @@
+language: node_js
+script: npm test
+deploy:
+  provider: heroku
+  app: x-gov-services-home
+env:
+  secure: e4D5JpUer1GO/2oCvIEfcLtB3x71vrKrEYKG4/6TI9ZbsU9j4S7i90oTMKgZbv3RkejVIsA7RIl2yaKGtDP6CF/FN+gc2v/KmuDSHuWZ+mKBxJ1HxqPGQcum+5UcKa03O3fpjMV6q+ujplbyeNmLNv5twTxz8GazJ7lazlnslnw=
