@@ -28,7 +28,8 @@
     "readdir": "0.0.6"
   },
   "devDependencies": {
-    "grunt-git": "^0.3.4"
+    "grunt-git": "^0.3.4",
+    "mocha": "2.2.5"
   },
   "scripts": {
     "test": "make test"
