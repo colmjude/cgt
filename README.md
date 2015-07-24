@@ -1,5 +1,7 @@
 # cross-gov-tools-prototypes
 
+[![Build Status](https://travis-ci.org/crossgovernmentservices/home.svg)](https://travis-ci.org/crossgovernmentservices/home)
+
 Info and useful links for cross government tools initiative. Currently hosting on heroku at [http://x-gov-services-home.herokuapp.com/](http://x-gov-services-home.herokuapp.com/)
 
 ## Express prototyping tool
