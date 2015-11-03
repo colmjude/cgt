@@ -25,10 +25,10 @@
     "markdown": "^0.5.0",
     "minimist": "0.0.8",
     "node-sass": "1.2.3",
-    "readdir": "0.0.6"
+    "readdir": "0.0.6",
+    "grunt-git": "^0.3.4",
   },
   "devDependencies": {
-    "grunt-git": "^0.3.4",
     "mocha": "2.2.5"
   },
   "scripts": {
