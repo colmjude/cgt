@@ -2,36 +2,28 @@
   "name": "Home",
   "urls": {
     "dev": "http://www.cstools.local/",
-    "staging_bare": "http://x-gov-services-home.herokuapp.com/",
-    "staging": "http://www.staging.cstools.co.uk/",
-    "prod_bare": "http://home.prototype.govuk.svc.tutum.io:3001/",
+    "prod_bare": "http://x-gov-services-home.herokuapp.com/",
     "prod": "http://www.cstools.co.uk/"
   }
 }, {
   "name": "Prototypes",
   "urls": {
     "dev": "http://prototypes.cstools.local/",
-    "staging_bare": "http://x-gov-services-prototypes.herokuapp.com/",
-    "staging": "http://prototypes.staging.cstools.co.uk",
-    "prod_bare": "http://prototypes.prototype.govuk.svc.tutum.io:3003/",
+    "prod_bare": "http://x-gov-services-prototypes.herokuapp.com/",
     "prod": "http://prototypes.cstools.co.uk"
   }
 }, {
   "name": "People",
   "urls": {
     "dev": "http://people.cstools.local/",
-    "staging_bare": "http://x-gov-services-people.herokuapp.com/",
-    "staging": "http://people.staging.cstools.co.uk",
-    "prod_bare": "http://people.prototype.govuk.svc.tutum.io:3004/",
+    "prod_bare": "http://x-gov-services-people.herokuapp.com/",
     "prod": "http://people.cstools.co.uk"
   }
 }, {
   "name": "Locations",
   "urls": {
     "dev": "http://locations.cstools.local/",
-    "staging_bare": "http://x-gov-services-locations.herokuapp.com/",
-    "staging": "http://locations.staging.cstools.co.uk",
-    "prod_bare": "http://locations.prototype.govuk.svc.tutum.io:8001/",
+    "prod_bare": "http://x-gov-services-locations.herokuapp.com/",
     "prod": "http://locations.cstools.co.uk"
   }
 }]
