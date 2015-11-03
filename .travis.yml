@@ -2,8 +2,10 @@ language: node_js
 script: npm test
 deploy:
   provider: heroku
-  app: x-gov-services-home
   api_key:
-    secure: JmsJKCTp4u8ibteO34bXVtdc3UpcJXLx6DbkLIPsMNLmf3503acQPybGcg4s/zViuAtX4iGuTrdoi7oyw9zoikaVYsgNOMxEbvw+nOqysm4XR6Mv5DVjqXApIf/yT00zY1JqfhYVu4eMog8MQ7BRwkqg2Oi4OJ+1iCZQya0P0XU=
+    secure: L/yFT/Uqx4xmTcYNX0IgKHukFMUzfrWN8c28PfKpy5zv6/G9bTrDTLp4VX9IoNyaj8DhrwKB7dymIG2WLBBr1pYhagc2IrUCSdqQzbE4XGpckJ0cKz5HGT1yrWa9Az9QKMYZyXI7E7pt5xhI03nuIVuMe0kM6zKYpkuvATavAxU=
+  app: x-gov-services-home
+  on:
+    repo: crossgovernmentservices/home
 env:
   secure: UFvR0Yuoxm7Wl6hZAOP023oCM+8Xxx2J2dHCh1HochwWnaZ0DqocLqyYJiZB/JHOykab6qjljMCGQM+FjJxIHhTsSuVtfx8sZQQa+Lhw0gma4kR1Rk4M2ui7xDD9AtZ7rV3oFhjABppPKkWJ2wcb7KEPf9f6T3+O0KHBvqHSHHo=
